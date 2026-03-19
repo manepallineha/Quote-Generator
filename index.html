@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>✨ Quote Generator</h1>
+
+    <select id="mood" onchange="changeMoodUI()">
+        <option value="">--Choose Mood--</option>
+        <option value="happy"> Happy</option>
+        <option value="sad"> Sad</option>
+        <option value="demotivated"> Demotivated</option>
+    </select>
+
+    <p id="quote">Select a mood to begin...</p>
+    <h3 id="author"></h3>
+
+    <button onclick="generateQuote()" id="mainBtn">Get Quote</button>
+
+    <div class="extra-buttons">
+        <button onclick="copyQuote()">📋 Copy</button>
+        <button onclick="shareQuote()">📱 Share</button>
+        <button onclick="saveFavorite()">❤️ Save</button>
+    </div>
+
+    <h4>⭐ Favorites</h4>
+    <ul id="favorites"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
